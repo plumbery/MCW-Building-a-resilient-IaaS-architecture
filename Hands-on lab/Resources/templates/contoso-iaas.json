@@ -37,11 +37,11 @@
         },
         "baseUri": {
             "type": "string",
-            "defaultValue": "https://raw.githubusercontent.com/microsoft/MCW-Building-a-resilient-IaaS-architecture/"
+            "defaultValue": "https://raw.githubusercontent.com/plumbery/MCW-Building-a-resilient-IaaS-architecture/"
         },
         "resourceFolder": {
             "type": "string",
-            "defaultValue": "master/Hands-on%20lab/Resources/"
+            "defaultValue": "tree/master/Hands-on%20lab/Resources/"
         }
     },
     "variables": {
