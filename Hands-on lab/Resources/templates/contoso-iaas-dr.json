@@ -130,7 +130,7 @@
             }
         },
         {
-            "name": "ADVM4",
+            "name": "ADVM5",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-10-01",
             "resourceGroup": "[parameters('SecondaryRG')]",
@@ -200,7 +200,7 @@
                     },
                     "DNSIPs": {
                         "value": [
-                            "10.1.3.101"
+                            "10.1.3.103"
                         ]
                     }
                 }
