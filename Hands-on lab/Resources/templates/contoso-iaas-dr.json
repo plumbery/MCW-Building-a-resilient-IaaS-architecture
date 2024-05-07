@@ -50,7 +50,7 @@
         },
         "resourceFolder": {
             "type": "string",
-            "defaultValue": "tree/tree/master/Hands-on%20lab/Resources/"
+            "defaultValue": "tree/master/Hands-on%20lab/Resources/"
         }
     },
     "variables": {
