@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "skuSizeVM": {
-      "defaultValue": "B8s_v2",
+      "defaultValue": "B2s_v2",
       "type": "string",
       "metadata": {
         "description": "Size of Virtual Machines to use"
