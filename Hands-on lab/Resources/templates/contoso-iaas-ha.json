@@ -80,7 +80,7 @@
                         "value": "ADVM2"
                     },
                     "AvailabilityZone": {
-                        "value": "2"
+                        "value": "1"
                     },
                     "ADSubnetId": {
                         "value": "[variables('ADSubnetId')]"
