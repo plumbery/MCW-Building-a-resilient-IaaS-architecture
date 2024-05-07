@@ -7,12 +7,7 @@
             "type": "string",
             "metadata": {
                 "description": "Size of Virtual Machines to use"
-            },
-            "allowedValues": [
-                "D2s_v3",
-                "D2s_v5",
-                "DC2s_v3"
-            ]
+            }
         },
         "adminUsername": {
             "type": "string",
