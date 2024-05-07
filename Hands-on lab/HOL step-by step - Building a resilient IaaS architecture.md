@@ -495,7 +495,7 @@ In this task, you will deploy the resources used by the DR environment. First, y
     You can proceed to the following tasks while the template deployment is in progress.
 
     ```PowerShell
-    New-AzResourceGroup -Name 'ContosoRG2' -Location 'East US 2'
+    New-AzResourceGroup -Name 'ContosoRG2' -Location 'Central US 2'
 
     New-AzSubscriptionDeployment -Name 'Contoso-IaaS-DR' `
         -TemplateUri 'https://raw.githubusercontent.com/plumbery/MCW-Building-a-resilient-IaaS-architecture/master/Hands-on%20lab/Resources/templates/contoso-iaas-dr.json' `

@@ -67,7 +67,7 @@
     },
     "resourceFolder": {
       "type": "string",
-      "defaultValue": "tree/master/Hands-on%20lab/Resources/"
+      "defaultValue": "master/Hands-on%20lab/Resources/"
     },
     "baseUri": {
       "type": "string",
