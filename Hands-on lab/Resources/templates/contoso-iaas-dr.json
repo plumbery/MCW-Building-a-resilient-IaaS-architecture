@@ -129,7 +129,57 @@
                 }
             }
         },
- 
+        {
+            "name": "ADVM4",
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2019-10-01",
+            "resourceGroup": "[parameters('SecondaryRG')]",
+            "dependsOn": [
+                "VirtualNetworkSecondaryWithPrimaryDNS"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[concat(parameters('baseUri'), parameters('resourceFolder'), 'templates/deploy-advm.json')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "skuSizeVM": {
+                        "value": "[parameters('skuSizeVM')]"
+                    },
+                    "baseUri": {
+                        "value": "[parameters('baseUri')]"
+                    },
+                    "resourceFolder": {
+                        "value": "[parameters('resourceFolder')]"
+                    },
+                    "ADVMName": {
+                        "value": "ADVM4"
+                    },
+                    "AvailabilityZone": {
+                        "value": "2"
+                    },
+                    "ADSubnetId": {
+                        "value": "[reference('VirtualNetworkSecondary').outputs.ADSubnetId.value]"
+                    },
+                    "ADVMPrivateIPAddress": {
+                        "value": "10.1.3.101"
+                    },
+                    "adminUserName": {
+                        "value": "[parameters('adminUserName')]"
+                    },
+                    "adminPassword": {
+                        "value": "[parameters('adminPassword')]"
+                    },
+                    "domainName": {
+                        "value": "[parameters('domainName')]"
+                    },
+                    "newDomain": {
+                        "value": false
+                    }
+                }
+            }
+        },
         {
             "name": "VirtualNetworkSecondaryWithSecondaryDNS",
             "type": "Microsoft.Resources/deployments",
